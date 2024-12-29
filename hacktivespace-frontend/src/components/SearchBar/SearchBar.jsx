@@ -9,26 +9,23 @@ export const SearchBar = () => {
     const [query, setQuery] = useState("");
     const [filteredSuggestions, setFilteredSuggestions] = useState([]);
     const [showSuggestions, setShowSuggestions] = useState(false);
-  
-    // Debounce Timer
-    let debounceTimer;
-  
-    const handleInputChange = (e) => {
-      const userInput = e.target.value;
-      setQuery(userInput);
-  
-      // Show suggestions only if input is not empty
-      if (userInput.trim() !== "") {
-        setShowSuggestions(true);
-  
-        // Debounce filtering
-        clearTimeout(debounceTimer);
-        debounceTimer = setTimeout(() => {
-          const matchedSuggestions = suggestions.filter((suggestion) =>
-            suggestion.toString().toLowerCase().includes(userInput.toString().toLowerCase())
+
+    useEffect(()=>{
+        const matchedSuggestions = suggestions.filter((suggestion) =>
+            suggestion.toString().toLowerCase().includes(query.toString().toLowerCase())
           );
           setFilteredSuggestions(matchedSuggestions);
-        }, 300); // Adjust debounce timing as needed
+       },[query]);
+  
+  
+    const handleInputChange = (e) => {
+
+      const userInput = e.target.value;
+      setQuery(userInput);
+    //  console.log(userInput);
+
+      if (userInput.trim() !== "") {
+        setShowSuggestions(true);
       } else {
         setShowSuggestions(false);
       }
@@ -41,11 +38,11 @@ export const SearchBar = () => {
   
     return (
       <div style={{ position: "relative", width: "300px" }}>
-        {/* Search Input */}
+       
         <input
           type="text"
           value={query}
-          onChange={handleInputChange}
+          onInput={handleInputChange}
           placeholder="Search any projects..."
           style={{
             width: "100%",
@@ -56,7 +53,7 @@ export const SearchBar = () => {
           }}
         />
   
-        {/* Suggestions Dropdown */}
+
         {showSuggestions && filteredSuggestions.length > 0 && (
           <ul
             style={{
@@ -91,7 +88,7 @@ export const SearchBar = () => {
           </ul>
         )}
   
-        {/* No Suggestions Message */}
+     
         {showSuggestions && filteredSuggestions.length === 0 && (
           <div
             style={{

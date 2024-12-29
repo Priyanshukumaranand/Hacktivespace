@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { TERipple } from 'tw-elements-react';
 import 'tw-elements-react/dist/css/tw-elements-react.min.css';
 
+
 export default function Header() {
     return (
         <header className="shadow sticky z-50 top-0 bg-white">
@@ -41,6 +42,30 @@ export default function Header() {
                                 }
                             >
                                 About
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/people"
+                                className={({ isActive }) =>
+                                    `py-2 px-4 rounded-lg duration-200 
+                                    ${isActive ? "text-orange-500 font-semibold" : "text-gray-900"}
+                                    hover:bg-gray-100 hover:text-orange-700`
+                                }
+                            >
+                                People
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/ourwork"
+                                className={({ isActive }) =>
+                                    `py-2 px-4 rounded-lg duration-200 
+                                    ${isActive ? "text-orange-500 font-semibold" : "text-gray-900"}
+                                    hover:bg-gray-100 hover:text-orange-700`
+                                }
+                            >
+                                Our Work
                             </NavLink>
                         </li>
                     </ul>

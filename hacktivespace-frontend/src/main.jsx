@@ -13,8 +13,10 @@ import Login from './components/Login/Login.jsx'
 import People from './components/People/People.jsx'
 import Contact from './components/Contact/Contact.jsx'
 import Services from './components/Services/Services.jsx'
-// import 'tw-elements-react/dist/css/tw-elements-react.min.css';
 import OurWork from './components/OurWork/OurWork.jsx'
+import BlogsPage from './components/Blogs/BlogPage.jsx'
+// import 'tw-elements-react/dist/css/tw-elements-react.min.css';
+
 
 const router = createBrowserRouter([
   {
@@ -36,8 +38,13 @@ const router = createBrowserRouter([
 
       },
       {
-        path:'contact',
-        element:<Contact/>
+        path:'blogs',
+        element:<Blogs/>
+
+      },
+      {
+        path:'projects',
+        element:<OurWork/>
 
       },
       {
@@ -46,13 +53,18 @@ const router = createBrowserRouter([
 
       },
       {
+        path:'contact',
+        element:<Contact/>
+
+      },
+      {
         path:'services',
         element:<Services/>
 
       },
       {
-        path:'ourwork',
-        element:<OurWork/>
+        path:'blog-page',
+        element:<BlogsPage/>
 
       },
       {

@@ -49,7 +49,7 @@ export default function Header() {
               </ul> */}
             </li>
              <li className="nav-item"><a className="nav-link" href="/services">Services</a></li>
-             {/* <li className="nav-item"><a className="nav-link" href="project.html">Portfolio</a></li> */}
+             <li className="nav-item"><a className="nav-link" href="/projects">Portfolio</a></li>
              <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="/blogs" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
               {/* <ul className="dropdown-menu" aria-labelledby="dropdown05">

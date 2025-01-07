@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Container, Row, Col, Button } from 'react-bootstrap';
-import logo from '../../assets/logo.png';
+// import logo from '../../assets/logo.png';
 import {projects} from '../projects/project';
 
 const OurWork = () => {

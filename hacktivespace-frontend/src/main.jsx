@@ -11,6 +11,8 @@ import User from './components/User/User.jsx'
 import Github,{ GitHubLoader } from './components/Github/Github.jsx'
 import Login from './components/Login/Login.jsx'
 import People from './components/People/People.jsx'
+import Contact from './components/Contact/Contact.jsx'
+import Services from './components/Services/Services.jsx'
 // import 'tw-elements-react/dist/css/tw-elements-react.min.css';
 import OurWork from './components/OurWork/OurWork.jsx'
 
@@ -34,8 +36,18 @@ const router = createBrowserRouter([
 
       },
       {
+        path:'contact',
+        element:<Contact/>
+
+      },
+      {
         path:'people',
         element:<People/>
+
+      },
+      {
+        path:'services',
+        element:<Services/>
 
       },
       {

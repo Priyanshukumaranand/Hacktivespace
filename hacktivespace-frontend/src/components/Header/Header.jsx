@@ -48,7 +48,7 @@ export default function Header() {
                 <li><a className="dropdown-item" href="pricing.html">Pricing</a></li>
               </ul> */}
             </li>
-             <li className="nav-item"><a className="nav-link" href="service.html">Services</a></li>
+             <li className="nav-item"><a className="nav-link" href="/services">Services</a></li>
              {/* <li className="nav-item"><a className="nav-link" href="project.html">Portfolio</a></li> */}
              <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="/blogs" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
@@ -59,7 +59,7 @@ export default function Header() {
                 <li><a className="dropdown-item" href="blog-single.html">Blog Single</a></li>
               </ul> */}
             </li>
-             <li className="nav-item"><a className="nav-link" href="contact.html">Contact</a></li>
+             <li className="nav-item"><a className="nav-link" href="/contact">Contact</a></li>
           </ul>
     
           <form className="form-lg-inline my-2 my-md-0 ml-lg-4 text-center">

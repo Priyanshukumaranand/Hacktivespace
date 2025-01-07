@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Container, Row, Col, Image } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../../assets/logo.png'; 
 
 const people = [

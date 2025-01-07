@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-    <h1 className='text-center text-rose-400 bg-neutral-900 m-2'>Royter</h1>
+    {/* <h1 className='text-center text-rose-400 bg-neutral-900 m-2'>Royter</h1> */}
     </>
   )
 }

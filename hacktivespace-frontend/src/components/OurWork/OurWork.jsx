@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, Container, Row, Col, Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../../assets/logo.png';
 import {projects} from '../projects/project';
 

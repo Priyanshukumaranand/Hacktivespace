@@ -272,7 +272,7 @@ export default function Home() {
 		<div className="row justify-content-center">
 			<div className="col-lg-4 col-md-6 mb-5">
 				<div className="card bg-transparent border-0">
-					<img src="images/blog/1.jpg" alt="" className="img-fluid rounded"/>
+					<img src="./src/images/blog/1.jpg" alt="" className="img-fluid rounded"/>
 
 					<div className="card-body mt-2">
 						<div className="blog-item-meta">
@@ -290,7 +290,7 @@ export default function Home() {
 
 			<div className="col-lg-4 col-md-6 mb-5">
 				<div className="card border-0 bg-transparent">
-					<img src="images/blog/2.jpg" alt="" className="img-fluid rounded"/>
+					<img src="./src/images/blog/2.jpg" alt="" className="img-fluid rounded"/>
 
 					<div className="card-body mt-2">
 						<div className="blog-item-meta">
@@ -308,7 +308,7 @@ export default function Home() {
 
 			<div className="col-lg-4 col-md-6 mb-5">
 				<div className="card border-0 bg-transparent">
-					<img src="images/blog/3.jpg" alt="" className="img-fluid rounded"/>
+					<img src="./src/images/blog/3.jpg" alt="" className="img-fluid rounded"/>
 
 					<div className="card-body mt-2">
 						<div className="blog-item-meta">

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
     return (
@@ -11,9 +12,9 @@ const Contact = () => {
                                 <span class="text-white">Contact Us</span>
                                 <h1 class="text-capitalize mb-4 text-lg">Get in Touch</h1>
                                 <ul class="list-inline">
-                                    <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+                                    <li class="list-inline-item"><Link to="/" class="text-white">Home</Link></li>
                                     <li class="list-inline-item"><span class="text-white">/</span></li>
-                                    <li class="list-inline-item"><a href="#" class="text-white-50">Contact Us</a></li>
+                                    <li class="list-inline-item"><Link to="#" class="text-white-50">Contact Us</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -69,13 +70,13 @@ const Contact = () => {
 
                                 <ul class="social-icons list-inline mt-5">
                                     <li class="list-inline-item">
-                                        <a href="http://www.themefisher.com"><i class="fab fa-facebook-f"></i></a>
+                                        <Link to="http://www.themefisher.com"><i class="fab fa-facebook-f"></i></Link>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a href="http://www.themefisher.com"><i class="fab fa-twitter"></i></a>
+                                        <Link to="http://www.themefisher.com"><i class="fab fa-twitter"></i></Link>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a href="http://www.themefisher.com"><i class="fab fa-linkedin-in"></i></a>
+                                        <Link to="http://www.themefisher.com"><i class="fab fa-linkedin-in"></i></Link>
                                     </li>
                                 </ul>
                             </div>

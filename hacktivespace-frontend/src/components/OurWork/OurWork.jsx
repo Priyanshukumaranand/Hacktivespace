@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Container, Row, Col, Button } from 'react-bootstrap';
 // import logo from '../../assets/logo.png';
-import { projects } from '../projects/project';
+// import { projects } from '../projects/project';
 
 const OurWork = () => {
     return (
@@ -12,7 +12,7 @@ const OurWork = () => {
                         <div class="col-md-12">
                             <div class="block text-center">
                                 <span class="text-white">Latest works</span>
-                                <h1 class="text-capitalize mb-4 text-lg">Portfolio</h1>
+                                <h1 class="text-capitalize mb-4 text-lg">Our Projects</h1>
                                 <ul class="list-inline">
                                     <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
                                     <li class="list-inline-item"><span class="text-white">/</span></li>

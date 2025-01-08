@@ -29,7 +29,7 @@ export default function Header() {
       <nav className="navbar navbar-expand-lg  py-4" id="navbar">
         <div className="container">
           <Link className="navbar-brand" to="/">
-            Mega<span>kit.</span>
+            Hacktive<span>space.</span>
           </Link>
     
           <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,7 @@ export default function Header() {
               </ul> */}
             </li>
              <li className="nav-item"><Link className="nav-link" to="/services">Services</Link></li>
-             <li className="nav-item"><Link className="nav-link" to="/projects">Portfolio</Link></li>
+             <li className="nav-item"><Link className="nav-link" to="/projects">Projects</Link></li>
              <li className="nav-item dropdown">
               <Link className="nav-link dropdown-toggle" to="/blogs" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</Link>
               {/* <ul className="dropdown-menu" aria-labelledby="dropdown05">

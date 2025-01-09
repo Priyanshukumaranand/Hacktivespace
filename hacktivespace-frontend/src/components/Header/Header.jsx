@@ -62,9 +62,10 @@ export default function Header() {
              <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
           </ul>
     
-          <form className="form-lg-inline my-2 my-md-0 ml-lg-4 text-center">
+          {/* <form className="form-lg-inline my-2 my-md-0 ml-lg-4 text-center">
             <Link to="/contact" className="btn btn-solid-border btn-round-full">Get a Quote</Link>
-          </form>
+            
+          </form> */}
           <div className="ml-lg-4">
             <SearchBar />
           </div>

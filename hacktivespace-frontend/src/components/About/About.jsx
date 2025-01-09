@@ -1,5 +1,12 @@
-import React from 'react'
+import React from 'react';
 import Reviews from '../Reviews/Reviews';
+import home7 from '../../images/about/home-7.jpg';
+import team1 from '../../images/team/team-1.jpg';
+import team2 from '../../images/team/team-2.jpg';
+import team3 from '../../images/team/team-3.jpg';
+import team4 from '../../images/team/team-4.jpg';
+import team5 from '../../images/team/team-5.jpg';
+import team6 from '../../images/team/team-6.jpg';
 
 export default function About() {
     return (
@@ -40,7 +47,7 @@ export default function About() {
                         </div>
                         <div className="col-lg-6 col-md-6">
                             <div className="about-item-img">
-                                <img src="./src/images/about/home-7.jpg" alt="" className="img-fluid" />
+                                <img src={home7} alt="" className="img-fluid" />
                             </div>
                         </div>
                     </div>
@@ -126,7 +133,7 @@ export default function About() {
                         <div className="col-lg-4 col-md-6 col-sm-6">
                             <div className="team-item-wrap mb-5">
                                 <div className="team-item position-relative">
-                                    <img src="./src/images/team/team-1.jpg" alt="" className="img-fluid w-100" />
+                                    <img src={team1} alt="" className="img-fluid w-100" />
                                     <div className="team-img-hover">
                                         <ul className="team-social list-inline">
                                             <li className="list-inline-item">
@@ -154,7 +161,7 @@ export default function About() {
                         <div className="col-lg-4 col-md-6 col-sm-6">
                             <div className="team-item-wrap mb-5">
                                 <div className="team-item position-relative">
-                                    <img src="./src/images/team/team-2.jpg" alt="" className="img-fluid w-100" />
+                                    <img src={team2} alt="" className="img-fluid w-100" />
                                     <div className="team-img-hover">
                                         <ul className="team-social list-inline">
                                             <li className="list-inline-item">
@@ -182,7 +189,7 @@ export default function About() {
                         <div className="col-lg-4 col-md-6 col-sm-6">
                             <div className="team-item-wrap mb-5 ">
                                 <div className="team-item position-relative">
-                                    <img src="./src/images/team/team-3.jpg" alt="" className="img-fluid w-100" />
+                                    <img src={team3} alt="" className="img-fluid w-100" />
                                     <div className="team-img-hover">
                                         <ul className="team-social list-inline">
                                             <li className="list-inline-item">
@@ -209,7 +216,7 @@ export default function About() {
                         <div className="col-lg-4 col-md-6 col-sm-6">
                             <div className="team-item-wrap mb-5 mb-lg-0">
                                 <div className="team-item position-relative">
-                                    <img src="./src/images/team/team-4.jpg" alt="" className="img-fluid w-100" />
+                                    <img src={team4} alt="" className="img-fluid w-100" />
                                     <div className="team-img-hover">
                                         <ul className="team-social list-inline">
                                             <li className="list-inline-item">
@@ -237,7 +244,7 @@ export default function About() {
                         <div className="col-lg-4 col-md-6 col-sm-6">
                             <div className="team-item-wrap mb-5 mb-lg-0">
                                 <div className="team-item position-relative">
-                                    <img src="./src/images/team/team-6.jpg" alt="" className="img-fluid w-100" />
+                                    <img src={team6} alt="" className="img-fluid w-100" />
                                     <div className="team-img-hover">
                                         <ul className="team-social list-inline">
                                             <li className="list-inline-item">
@@ -265,7 +272,7 @@ export default function About() {
                         <div className="col-lg-4 col-md-6 col-sm-6">
                             <div className="team-item-wrap mb-5 mb-lg-0 ">
                                 <div className="team-item position-relative">
-                                    <img src="./src/images/team/team-5.jpg" alt="" className="img-fluid w-100" />
+                                    <img src={team5} alt="" className="img-fluid w-100" />
                                     <div className="team-img-hover">
                                         <ul className="team-social list-inline">
                                             <li className="list-inline-item">

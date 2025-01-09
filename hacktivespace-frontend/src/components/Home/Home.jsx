@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Image from 'react-bootstrap/Image';
-// import '../../plugins/slick-carousel/slick/slick.css';
-// import '../../plugins/slick-carousel/slick/slick-theme.css';
-// import '../../plugins/slick-carousel/slick/slick.min.js';
 import Reviews from '../Reviews/Reviews';
+import blog1 from '../../images/blog/1.jpg';
+import blog2 from '../../images/blog/2.jpg';
+import blog3 from '../../images/blog/3.jpg';
+
 export default function Home() {
     return (
         <>
@@ -229,7 +230,7 @@ export default function Home() {
 		<div className="row justify-content-center">
 			<div className="col-lg-4 col-md-6 mb-5">
 				<div className="card bg-transparent border-0">
-					<Image src="./src/images/blog/1.jpg" alt="" className="img-fluid rounded"/>
+					<Image src={blog1} alt="" className="img-fluid rounded"/>
 
 					<div className="card-body mt-2">
 						<div className="blog-item-meta">
@@ -247,7 +248,7 @@ export default function Home() {
 
 			<div className="col-lg-4 col-md-6 mb-5">
 				<div className="card border-0 bg-transparent">
-					<Image src="./src/images/blog/2.jpg" alt="" className="img-fluid rounded"/>
+					<Image src={blog2} alt="" className="img-fluid rounded"/>
 
 					<div className="card-body mt-2">
 						<div className="blog-item-meta">
@@ -265,7 +266,7 @@ export default function Home() {
 
 			<div className="col-lg-4 col-md-6 mb-5">
 				<div className="card border-0 bg-transparent">
-					<Image src="./src/images/blog/3.jpg" alt="" className="img-fluid rounded"/>
+					<Image src={blog3} alt="" className="img-fluid rounded"/>
 
 					<div className="card-body mt-2">
 						<div className="blog-item-meta">

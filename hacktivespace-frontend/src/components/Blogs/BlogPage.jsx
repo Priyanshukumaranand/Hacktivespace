@@ -1,5 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import blogImage2 from '../../images/blog/2.jpg'
+import testImage1 from '../../images/blog/test1.jpg'
+import testImage2 from '../../images/blog/test2.jpg'
+import blogAuthorImage from '../../images/blog/blog-author.jpg'
+import latestPostImage1 from '../../images/blog/bt-3.jpg'
+import latestPostImage2 from '../../images/blog/bt-2.jpg'
+import latestPostImage3 from '../../images/blog/bt-1.jpg'
 
 const BlogPage = () => {
     return (
@@ -29,7 +36,7 @@ const BlogPage = () => {
                             <div class="row">
                                 <div class="col-lg-12 mb-5">
                                     <div class="single-blog-item">
-                                        <img src="./src/images/blog/2.jpg" alt="" class="img-fluid rounded" />
+                                        <img src={blogImage2} alt="" class="img-fluid rounded" />
 
                                         <div class="blog-item-content bg-white p-5">
                                             <div class="blog-item-meta bg-gray py-1 px-2">
@@ -97,7 +104,7 @@ const BlogPage = () => {
                                         <ul class="comment-tree list-unstyled">
                                             <li class="mb-5">
                                                 <div class="comment-area-box">
-                                                    <img alt="" src="./src/images/blog/test1.jpg" class="img-fluid float-left mr-3 mt-2" />
+                                                    <img alt="" src={testImage1} class="img-fluid float-left mr-3 mt-2" />
 
                                                     <h5 class="mb-1">Philip W</h5>
                                                     <span>United Kingdom</span>
@@ -115,7 +122,7 @@ const BlogPage = () => {
 
                                             <li>
                                                 <div class="comment-area-box">
-                                                    <img alt="" src="./src/images/blog/test2.jpg" class="mt-2 img-fluid float-left mr-3" />
+                                                    <img alt="" src={testImage2} class="mt-2 img-fluid float-left mr-3" />
 
                                                     <h5 class="mb-1">Philip W</h5>
                                                     <span>United Kingdom</span>
@@ -166,7 +173,7 @@ const BlogPage = () => {
                                 </div>
 
                                 <div class="sidebar-widget card border-0 mb-3">
-                                    <img src="./src/images/blog/blog-author.jpg" alt="" class="img-fluid" />
+                                    <img src={blogAuthorImage} alt="" class="img-fluid" />
                                     <div class="card-body p-4 text-center">
                                         <h5 class="mb-0 mt-4">Arther Conal</h5>
                                         <p>Digital Marketer</p>
@@ -196,7 +203,7 @@ const BlogPage = () => {
                                     <h5>Latest Posts</h5>
 
                                     <div class="media border-bottom py-3">
-                                        <Link to="#"><img class="mr-4" src="./src/images/blog/bt-3.jpg" alt="" /></Link>
+                                        <Link to="#"><img class="mr-4" src={latestPostImage1} alt="" /></Link>
                                         <div class="media-body">
                                             <h6 class="my-2"><Link to="#">Thoughtful living in los Angeles</Link></h6>
                                             <span class="text-sm text-muted">03 Mar 2018</span>
@@ -204,7 +211,7 @@ const BlogPage = () => {
                                     </div>
 
                                     <div class="media border-bottom py-3">
-                                        <Link to="#"><img class="mr-4" src="./src/images/blog/bt-2.jpg" alt="" /></Link>
+                                        <Link to="#"><img class="mr-4" src={latestPostImage2} alt="" /></Link>
                                         <div class="media-body">
                                             <h6 class="my-2"><Link to="#">Vivamus molestie gravida turpis.</Link></h6>
                                             <span class="text-sm text-muted">03 Mar 2018</span>
@@ -212,7 +219,7 @@ const BlogPage = () => {
                                     </div>
 
                                     <div class="media py-3">
-                                        <Link to="#"><img class="mr-4" src="./src/images/blog/bt-1.jpg" alt="" /></Link>
+                                        <Link to="#"><img class="mr-4" src={latestPostImage3} alt="" /></Link>
                                         <div class="media-body">
                                             <h6 class="my-2"><Link to="#">Fusce lobortis lorem at ipsum semper sagittis</Link></h6>
                                             <span class="text-sm text-muted">03 Mar 2018</span>

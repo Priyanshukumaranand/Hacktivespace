@@ -195,8 +195,9 @@ export default function Home() {
 	</div>
 </section>
 {/* <!--  Section Cta End--> */}
+
 {/* <!-- Section Testimonial Start --> */}
-<section className="section testimonial">
+{/* <section className="section testimonial">
 	<div className="container">
 		<div className="row">
 			<div className="col-lg-7 ">
@@ -208,11 +209,11 @@ export default function Home() {
 		</div>
 	</div>
 
-	<div className="container">
+	<div className="container"> */}
 		<Reviews/>
-	</div>
+	{/* </div>
 
-</section>
+</section> */}
 {/* <!-- Section Testimonial End --> */}
 <section className="section latest-blog bg-2">
 	<div className="container">

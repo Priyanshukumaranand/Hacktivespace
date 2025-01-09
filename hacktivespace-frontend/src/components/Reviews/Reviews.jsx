@@ -13,6 +13,20 @@ const Reviews = () => {
   };
 
   return (
+    <section className="section testimonial bg-gray">
+	<div className="container">
+		<div className="row justify-content-center">
+			<div className="col-lg-7 text-center">
+				<div className="section-title">
+					<span className="h6 text-color">Clients testimonial</span>
+					<h2 className="mt-3 content-title">Check what's our clients say about us</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div className="container"></div>
+  <div className="testimonial-wrap">
     <div style={{ width: "80%", margin: "0 auto" }}>
       <Slider {...settings}>
         <div className="testimonial-item position-relative">
@@ -75,6 +89,8 @@ const Reviews = () => {
         </div>
       </Slider>
     </div>
+    </div>
+</section>
   );
 };
 

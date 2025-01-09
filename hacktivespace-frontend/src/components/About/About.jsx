@@ -1,4 +1,5 @@
 import React from 'react'
+import Reviews from '../Reviews/Reviews';
 
 export default function About() {
     return (
@@ -293,7 +294,7 @@ export default function About() {
             </section>
             {/* <!--  Section Services End --> */}
             {/* <!-- Section Testimonial Start --> */}
-            <section className="section testimonial bg-gray">
+            {/* <section className="section testimonial bg-gray">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-7 text-center">
@@ -357,7 +358,8 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
+            <Reviews/>
             {/* <!-- Section Testimonial End --> */}
         </div>
     </>

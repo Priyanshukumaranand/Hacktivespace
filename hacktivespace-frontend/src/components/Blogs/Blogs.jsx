@@ -8,6 +8,9 @@ import blogAuthor from '../../images/blog/blog-author.jpg'
 import bt1 from '../../images/blog/bt-1.jpg'
 import bt2 from '../../images/blog/bt-2.jpg'
 import bt3 from '../../images/blog/bt-3.jpg'
+import Search from './Search.jsx'
+import Sidebar from './Sidebar.jsx'
+import BlogSlider from './BlogSlider.jsx'
 
 const Blogs = () => {
 	return (
@@ -30,9 +33,11 @@ const Blogs = () => {
 				</div>
 			</section>
 
+             {/* blog */}
 			<section className="section blog-wrap bg-gray">
 				<div className="container">
 					<div className="row">
+						{/* Main blog */}
 						<div className="col-lg-8">
 							<div className="row">
 								<div className="col-lg-6 col-md-6 mb-5">
@@ -52,7 +57,24 @@ const Blogs = () => {
 									</div>
 								</div>
 
-								<div className="col-lg-6 col-md-6 mb-5">
+								
+							</div>
+						</div>
+					
+                           <Sidebar/>					
+							
+					</div>
+                   {/* Prev Next */}
+					<BlogSlider/>
+				</div>
+			</section>
+		</>
+	)
+}
+
+export default Blogs
+
+{/* <div className="col-lg-6 col-md-6 mb-5">
 									<div className="blog-item">
 										<img src={blog2} alt="" className="img-fluid rounded" />
 
@@ -100,103 +122,4 @@ const Blogs = () => {
 											<Link to="/blog-page" className="btn btn-small btn-main btn-round-full">Learn More</Link>
 										</div>
 									</div>
-								</div>
-							</div>
-						</div>
-						<div className="col-lg-4">
-							<div className="sidebar-wrap">
-								<div className="sidebar-widget search card p-4 mb-3 border-0">
-									<input type="text" className="form-control" placeholder="search" />
-									<Link to="#" className="btn btn-mian btn-small d-block mt-2">search</Link>
-								</div>
-
-								<div className="sidebar-widget card border-0 mb-3">
-									<img src={blogAuthor} alt="" className="img-fluid" />
-									<div className="card-body p-4 text-center">
-										<h5 className="mb-0 mt-4">Arther Conal</h5>
-										<p>Digital Marketer</p>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, dolore.</p>
-
-										<ul className="list-inline author-socials">
-											<li className="list-inline-item mr-3">
-												<Link to="#"><i className="fab fa-facebook-f text-muted"></i></Link>
-											</li>
-											<li className="list-inline-item mr-3">
-												<Link to="#"><i className="fab fa-twitter text-muted"></i></Link>
-											</li>
-											<li className="list-inline-item mr-3">
-												<Link to="#"><i className="fab fa-linkedin-in text-muted"></i></Link>
-											</li>
-											<li className="list-inline-item mr-3">
-												<Link to="#"><i className="fab fa-pinterest text-muted"></i></Link>
-											</li>
-											<li className="list-inline-item mr-3">
-												<Link to="#"><i className="fab fa-behance text-muted"></i></Link>
-											</li>
-										</ul>
-									</div>
-								</div>
-
-								<div className="sidebar-widget latest-post card border-0 p-4 mb-3">
-									<h5>Latest Posts</h5>
-
-									<div className="media border-bottom py-3">
-										<Link to="#"><img className="mr-4" src={bt3} alt="" /></Link>
-										<div className="media-body">
-											<h6 className="my-2"><Link to="#">Thoughtful living in los Angeles</Link></h6>
-											<span className="text-sm text-muted">03 Mar 2018</span>
-										</div>
-									</div>
-
-									<div className="media border-bottom py-3">
-										<Link to="#"><img className="mr-4" src={bt2} alt="" /></Link>
-										<div className="media-body">
-											<h6 className="my-2"><Link to="#">Vivamus molestie gravida turpis.</Link></h6>
-											<span className="text-sm text-muted">03 Mar 2018</span>
-										</div>
-									</div>
-
-									<div className="media py-3">
-										<Link to="#"><img className="mr-4" src={bt1} alt="" /></Link>
-										<div className="media-body">
-											<h6 className="my-2"><Link to="#">Fusce lobortis lorem at ipsum semper sagittis</Link></h6>
-											<span className="text-sm text-muted">03 Mar 2018</span>
-										</div>
-									</div>
-								</div>
-
-								<div className="sidebar-widget bg-white rounded tags p-4 mb-3">
-									<h5 className="mb-4">Tags</h5>
-
-									<Link to="#">Web</Link>
-									<Link to="#">agency</Link>
-									<Link to="#">company</Link>
-									<Link to="#">creative</Link>
-									<Link to="#">html</Link>
-									<Link to="#">Marketing</Link>
-									<Link to="#">Social Media</Link>
-									<Link to="#">Branding</Link>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div className="row mt-5">
-						<div className="col-lg-8">
-							<nav className="navigation pagination py-2 d-inline-block">
-								<div className="nav-links">
-									<Link className="prev page-numbers" to="#">Prev</Link>
-									<span aria-current="page" className="page-numbers current">1</span>
-									<Link className="page-numbers" to="#">2</Link>
-									<Link className="next page-numbers" to="#">Next</Link>
-								</div>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</section>
-		</>
-	)
-}
-
-export default Blogs
+								</div> */}

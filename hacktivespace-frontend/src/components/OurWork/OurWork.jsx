@@ -1,11 +1,11 @@
 import React from 'react';
 import { Card, Container, Row, Col, Button } from 'react-bootstrap';
-import img1 from 'src/images/portfolio/1.jpg';
-import img2 from 'src/images/portfolio/2.jpg';
-import img3 from 'src/images/portfolio/3.jpg';
-import img4 from 'src/images/portfolio/4.jpg';
-import img5 from 'src/images/portfolio/5.jpg';
-import img6 from 'src/images/portfolio/6.jpg';
+import img1 from '../../images/portfolio/1.jpg';
+import img2 from '../../images/portfolio/2.jpg';
+import img3 from '../../images/portfolio/3.jpg';
+import img4 from '../../images/portfolio/4.jpg';
+import img5 from '../../images/portfolio/5.jpg';
+import img6 from '../../images/portfolio/6.jpg';
 
 const OurWork = () => {
     return (

@@ -15,7 +15,6 @@ import Contact from './components/Contact/Contact.jsx'
 import Services from './components/Services/Services.jsx'
 import OurWork from './components/OurWork/OurWork.jsx'
 import BlogsPage from './components/Blogs/BlogPage.jsx'
-// import 'tw-elements-react/dist/css/tw-elements-react.min.css';
 
 
 const router = createBrowserRouter([

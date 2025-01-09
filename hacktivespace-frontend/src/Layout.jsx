@@ -8,7 +8,6 @@ function Layout() {
   return (
    <>
     <Header/>
-    {/* <About/> */}
     <Outlet/>
     <Footer/>
    </>

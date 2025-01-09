@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom';
 import Image from 'react-bootstrap/Image';
-
+// import '../../plugins/slick-carousel/slick/slick.css';
+// import '../../plugins/slick-carousel/slick/slick-theme.css';
+// import '../../plugins/slick-carousel/slick/slick.min.js';
+import Reviews from '../Reviews/Reviews';
 export default function Home() {
     return (
         <>
@@ -206,57 +209,9 @@ export default function Home() {
 	</div>
 
 	<div className="container">
-		<div className="row testimonial-wrap">
-			<div className="testimonial-item position-relative">
-				<i className="ti-quote-left text-color"></i>
-
-				<div className="testimonial-item-content">
-					<p className="testimonial-text">Quam maiores perspiciatis temporibus odio reiciendis error alias debitis atque consequuntur natus iusto recusandae numquam corrupti facilis blanditiis.</p>
-
-					<div className="testimonial-author">
-						<h5 className="mb-0 text-capitalize">Thomas Johnson</h5>
-						<p>Excutive Director,themefisher</p>
-					</div>
-				</div>
-			</div>
-			<div className="testimonial-item position-relative">
-				<i className="ti-quote-left text-color"></i>
-
-				<div className="testimonial-item-content">
-					<p className="testimonial-text">Consectetur adipisicing elit. Quam maiores perspiciatis temporibus odio reiciendis error alias debitis atque consequuntur natus iusto recusandae .</p>
-
-					<div className="testimonial-author">
-						<h5 className="mb-0 text-capitalize">Mickel hussy</h5>
-						<p>Excutive Director,themefisher</p>
-					</div>
-				</div>
-			</div>
-			<div className="testimonial-item position-relative">
-				<i className="ti-quote-left text-color"></i>
-
-				<div className="testimonial-item-content">
-					<p className="testimonial-text">Quam maiores perspiciatis temporibus odio reiciendis error alias debitis atque consequuntur natus iusto recusandae numquam corrupti.</p>
-
-					<div className="testimonial-author">
-						<h5 className="mb-0 text-capitalize">James Watson</h5>
-						<p>Excutive Director,themefisher</p>
-					</div>
-				</div>
-			</div>
-			<div className="testimonial-item position-relative">
-				<i className="ti-quote-left text-color"></i>
-
-				<div className="testimonial-item-content">
-					<p className="testimonial-text">Consectetur adipisicing elit. Quam maiores perspiciatis temporibus odio reiciendis error alias debitis atque consequuntur natus iusto recusandae .</p>
-
-					<div className="testimonial-author">
-						<h5 className="mb-0 text-capitalize">Mickel hussy</h5>
-						<p>Excutive Director,themefisher</p>
-					</div>
-				</div>
-			</div>
-		</div>
+		<Reviews/>
 	</div>
+
 </section>
 {/* <!-- Section Testimonial End --> */}
 <section className="section latest-blog bg-2">

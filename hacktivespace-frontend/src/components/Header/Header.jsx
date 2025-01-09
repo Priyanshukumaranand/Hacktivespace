@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { SearchBar } from '../SearchBar/SearchBar';
 // import 'tw-elements-react/dist/css/tw-elements-react.min.css';
-// import {SearchBar} from '../SearchBar/SearchBar';
 
 
 export default function Header() {
@@ -65,6 +65,9 @@ export default function Header() {
           <form className="form-lg-inline my-2 my-md-0 ml-lg-4 text-center">
             <Link to="/contact" className="btn btn-solid-border btn-round-full">Get a Quote</Link>
           </form>
+          <div className="ml-lg-4">
+            <SearchBar />
+          </div>
           </div>
         </div>
       </nav>

@@ -16,7 +16,7 @@ const Sidebar = () => {
           <Search />
 
           {/* User info */}
-          <div className="sidebar-widget card border-0 mb-3">
+          {/* <div className="sidebar-widget card border-0 mb-3">
             <img src={blogAuthor} alt="" className="img-fluid" />
             <div className="card-body p-4 text-center">
               <h5 className="mb-0 mt-4">Arther Conal</h5>
@@ -41,7 +41,7 @@ const Sidebar = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
 
           <LatestBlogs />
           <Tags />

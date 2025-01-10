@@ -1,8 +1,7 @@
-// filepath: /c:/Users/priya/Projects/Hacktivspace/hacktivespace-frontend/src/components/Blogs/BlogList.jsx
 import React, { useEffect, useState } from 'react';
 import sanityClient from '../../lib/sanity';
+
 import BlogItem from './BlogItem';
-import Sidebar from './Sidebar';
 
 const BlogList = () => {
   const [blogs, setBlogs] = useState([]);
@@ -13,6 +12,9 @@ const BlogList = () => {
         `*[_type == "blog"]{
           title,
           slug,
+          author->{
+            name
+          },
           mainImage{
             asset->{
               _id,
@@ -20,30 +22,31 @@ const BlogList = () => {
             },
             alt
           },
+          categories[]->{
+            title
+          },
+          publishedAt,
           body
         }`
       )
-      .then((data) => setBlogs(data))
+      .then((data) => {
+        console.log('Fetched blogs:', data);
+        setBlogs(data);
+      })
       .catch(console.error);
   }, []);
 
   return (
-    <section className="section blog-wrap bg-gray">
-      <div className="container">
+    <>
+      {/* Main blog */}
+      <div className="col-lg-8">
         <div className="row">
-          <div className="col-lg-8">
-            <div className="row">
-              {blogs.map((blog, index) => (
-                <BlogItem key={index} blog={blog} />
-              ))}
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <Sidebar />
-          </div>
+          {blogs.map((blog, index) => (
+            <BlogItem key={index} blog={blog} />
+          ))}
         </div>
       </div>
-    </section>
+    </>
   );
 };
 

@@ -42,7 +42,7 @@ export default function Header() {
             <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
             </li>
             <li className="nav-item dropdown">
-              <Link className="nav-link dropdown-toggle" to="/about" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</Link>
+              <Link className="nav-link dropdown-toggle" to="/about" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">People</Link>
               {/* <ul className="dropdown-menu" aria-labelledby="dropdown03">
                 <li><Link className="dropdown-item" to="/about">Our company</Link></li>
                 <li><Link className="dropdown-item" to="pricing.html">Pricing</Link></li>

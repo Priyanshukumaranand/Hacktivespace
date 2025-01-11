@@ -30,7 +30,7 @@ const BlogList = () => {
         }`
       )
       .then((data) => {
-        console.log('Fetched blogs:', data);
+        // console.log('Fetched blogs:', data);
         setBlogs(data);
       })
       .catch(console.error);

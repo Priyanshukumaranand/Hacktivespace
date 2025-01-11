@@ -8,6 +8,7 @@ import Tags from './Tags';
 import BlogComments from './BlogComments';
 import Search from './Search';
 import BlogAuthor from './BlogAuthor';
+import CommentForm from './CommentForm';
 
 const BlogPage = () => {
   const { slug } = useParams();
@@ -109,6 +110,7 @@ const BlogPage = () => {
                   </div>
                 </div>
                 <BlogComments />
+                <CommentForm />
               </div>
             </div>
             <div className="col-lg-4">
@@ -116,7 +118,7 @@ const BlogPage = () => {
                 <Search />
                 <BlogAuthor author={blog.author} />
                 <LatestBlogs />
-                <Tags tags={blog.categories}/>
+                <Tags tags={blog.categories} />
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { SearchBar } from '../SearchBar/SearchBar';
-// import 'tw-elements-react/dist/css/tw-elements-react.min.css';
+import Search from '../Blogs/Search';
 
 
 export default function Header() {
@@ -68,6 +68,7 @@ export default function Header() {
           </form> */}
           <div className="ml-lg-4">
             <SearchBar />
+            {/* <Search/> */}
           </div>
           </div>
         </div>

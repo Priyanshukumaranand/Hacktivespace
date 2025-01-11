@@ -6,11 +6,11 @@ export default function Footer() {
     <footer className="footer section">
         <div className="container">
             <div className="row">
-                <div className="col-lg-3 col-md-6 col-sm-6">
+                <div className="col-lg-3 col-md-6 col-sm-6 mb-4">
                     <div className="widget">
-                        <h4 className="text-capitalize mb-4">Company</h4>
+                        <h4 className="text-capitalize mb-4" style={{ fontSize: "1.5rem" }}>Company</h4>
     
-                        <ul className="list-unstyled footer-menu lh-35">
+                        <ul className="list-unstyled footer-menu lh-35" style={{ fontSize: "1.2rem", display: "flex", flexDirection: "row", gap: "20px" , flexWrap: "wrap"}}>
                             <li><Link to="#">Terms & Conditions</Link></li>
                             <li><Link to="#">Privacy Policy</Link></li>
                             <li><Link to="#">Support</Link></li>
@@ -18,31 +18,19 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div className="col-lg-2 col-md-6 col-sm-6">
+                <div className="col-lg-3 col-md-6 col-sm-6 mb-4">
                     <div className="widget">
-                        <h4 className="text-capitalize mb-4">Quick Links</h4>
-    
-                        <ul className="list-unstyled footer-menu lh-35">
-                            <li><Link to="/about">About</Link></li>
-                            <li><Link to="/services">Services</Link></li>
-                            <li><Link to="/projects">Projects</Link></li>
-                            <li><Link to="/contact">Contact</Link></li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="col-lg-3 col-md-6 col-sm-6">
-                    <div className="widget">
-                        <h4 className="text-capitalize mb-4">Subscribe Us</h4>
-                        <p>Subscribe to get latest news article and resources  </p>
-    
+                        {/* <h4 className="text-capitalize mb-4">Subscribe Us</h4>
+                        <p>Subscribe to get latest news article and resources  </p> */}
+{/*     
                         <form action="#" className="sub-form">
                             <input type="text" className="form-control mb-3" placeholder="Subscribe Now ..."/>
                             <Link to="#" className="btn btn-main btn-small">subscribe</Link>
-                        </form>
+                        </form> */}
                     </div>
                 </div>
     
-                <div className="col-lg-3 ml-auto col-sm-6">
+                <div className="col-lg-3 ml-auto col-sm-6 mb-4">
                     <div className="widget">
                         <div className="logo mb-4">
                             <h3>Hacktive<span>space.</span></h3>
@@ -55,18 +43,18 @@ export default function Footer() {
             
             <div className="footer-btm pt-4">
                 <div className="row">
-                    <div className="col-lg-4 col-md-12 col-sm-12">
+                    <div className="col-lg-4 col-md-12 col-sm-12 mb-3">
                         <div className="copyright">
                             &copy; Copyright Reserved to <span className="text-color">Hacktivespace.</span> by <a href="https://themefisher.com/" target="_blank">Themefisher</a>
                         </div>
                     </div>
     
-                    <div className="col-lg-4 col-md-12 col-sm-12">
+                    <div className="col-lg-4 col-md-12 col-sm-12 mb-3">
                         <div className="copyright">
                         Distributed by  <a href="https://themewagon.com/" target="_blank">Themewagon</a>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-12 col-sm-12 text-left text-lg-left">
+                    <div className="col-lg-4 col-md-12 col-sm-12 text-left text-lg-left mb-3">
                         <ul className="list-inline footer-socials">
                             <li className="list-inline-item"><a href="https://www.facebook.com/themefisher"><i className="ti-facebook mr-2"></i>Facebook</a></li>
                             <li className="list-inline-item"><a href="https://twitter.com/themefisher"><i className="ti-twitter mr-2"></i>Twitter</a></li>

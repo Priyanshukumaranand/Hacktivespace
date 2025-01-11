@@ -1,0 +1,23 @@
+/* ProjectSlider.css */
+.slider-item {
+    padding: 0 10px; /* Adds horizontal padding between images */
+  }
+  
+  .small-image {
+    width: 80%; /* Reduces image size */
+    margin: 0 auto; /* Centers the image */
+  }
+  
+  .card-body {
+    text-align: center; /* Centers text content */
+  }
+  
+  .card {
+    transform: scale(0.9); /* Scales down the entire card */
+  }
+  
+  .slick-slide {
+    display: flex;
+    justify-content: center; /* Centers the slide content */
+  }
+  

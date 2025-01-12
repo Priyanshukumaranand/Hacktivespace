@@ -37,7 +37,7 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="ml-lg-4">
+    <div className="ml-lg-4" style={{ position: 'relative' }}>
       <form className="form-lg-inline my-2 my-md-0 ml-lg-4 text-center">
         <input
           value={searchTerm}
@@ -49,26 +49,46 @@ const SearchBar = () => {
           className="btn btn-solid-border btn-round-full ml-2"
           placeholder="Search..."
           aria-label="Search"
+          style={{
+            width: '300px', // Set a fixed width for the input field
+            padding: '10px',
+            border: '1px solid #ddd',
+            borderRadius: '4px',
+            fontSize: '16px',
+            textTransform: 'none', // Ensure the text is displayed as typed
+          }}
         />
+
         {showSuggestions && (
           <ul
             className="dropdown-suggestions"
             style={{
               position: 'absolute',
-              top: '100%',
-              left: 0,
-              right: 0,
+              top: 'calc(100% + 4px)', // Spacing below the input
+              left: 'auto', // Align to the input's left edge
+              width: '100%', // Match the input width
               backgroundColor: 'white',
+              border: '1px solid #e0e0e0',
+              borderRadius: '0 0 4px 4px', // Rounded bottom corners
               boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-              borderRadius: '4px',
-              marginTop: '4px',
-              padding: '8px 0',
               listStyle: 'none',
+              margin: 0,
+              padding: 0,
               zIndex: 1000,
+              maxHeight: '300px', // Limit height
+              overflowY: 'auto', // Add scrolling for overflow
             }}
           >
             {results.length === 0 && searchTerm !== '' ? (
-              <li style={{ padding: '8px 16px', color: '#666' }}>No suggestions</li>
+              <li
+                style={{
+                  padding: '12px 16px',
+                  color: '#666',
+                  fontSize: '14px',
+                }}
+              >
+                No suggestions
+              </li>
             ) : (
               results.map((item) => (
                 <li key={item.slug.current}>
@@ -76,12 +96,14 @@ const SearchBar = () => {
                     to={`/blogs/${item.slug.current}`}
                     style={{
                       display: 'block',
-                      padding: '8px 16px',
+                      padding: '12px 16px',
                       color: '#333',
+                      fontSize: '14px',
                       textDecoration: 'none',
+                      borderBottom: '1px solid #f0f0f0',
                       transition: 'background-color 0.2s',
                     }}
-                    onMouseOver={(e) => (e.target.style.backgroundColor = '#f5f5f5')}
+                    onMouseOver={(e) => (e.target.style.backgroundColor = '#f1f1f1')}
                     onMouseOut={(e) => (e.target.style.backgroundColor = 'transparent')}
                   >
                     {item.title}

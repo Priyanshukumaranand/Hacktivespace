@@ -2,9 +2,9 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Image from 'react-bootstrap/Image';
 import Reviews from '../Reviews/Reviews';
-import blog1 from '../../images/blog/1.jpg';
-import blog2 from '../../images/blog/2.jpg';
-import blog3 from '../../images/blog/3.jpg';
+import blog1 from '/images/blog/1.jpg';
+import blog2 from '/images/blog/2.jpg';
+import blog3 from '/images/blog/3.jpg';
 
 export default function Home() {
     return (

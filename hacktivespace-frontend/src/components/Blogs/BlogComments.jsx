@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import sanityClient from '../../lib/sanity';
 import { Link } from 'react-router-dom';
-import testImage1 from '../../images/blog/test1.jpg'
-import testImage2 from '../../images/blog/test2.jpg'
+import testImage1 from '/images/blog/test1.jpg'
 
 const BlogComments = ({ blogtitle }) => {
 

@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import sanityClient from '../../lib/sanity';
 import Reviews from '../Reviews/Reviews';
 
-import home7 from '../../images/about/home-7.jpg';
-import team1 from '../../images/team/team-1.jpg';
-import team2 from '../../images/team/team-2.jpg';
-import team3 from '../../images/team/team-3.jpg';
-import team4 from '../../images/team/team-4.jpg';
-import team5 from '../../images/team/team-5.jpg';
-import team6 from '../../images/team/team-6.jpg';
+import home7 from '/images/about/home-7.jpg';
+// import team1 from '../../images/team/team-1.jpg';
+// import team2 from '../../images/team/team-2.jpg';
+// import team3 from '../../images/team/team-3.jpg';
+// import team4 from '../../images/team/team-4.jpg';
+// import team5 from '../../images/team/team-5.jpg';
+// import team6 from '../../images/team/team-6.jpg';
 import PeopleItem from './PeopleItem';
 
 export default function About() {

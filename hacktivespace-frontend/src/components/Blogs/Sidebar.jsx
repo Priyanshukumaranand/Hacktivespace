@@ -1,7 +1,7 @@
 // filepath: /c:/Users/priya/Projects/Hacktivspace/hacktivespace-frontend/src/components/Blogs/Sidebar.jsx
 import React from 'react';
-import { Link } from 'react-router-dom';
-import blogAuthor from '../../images/blog/blog-author.jpg';
+// import { Link } from 'react-router-dom';
+// import blogAuthor from '../../images/blog/blog-author.jpg';
 import LatestBlogs from './LatestBlogs';
 import Tags from './Tags';
 import Search from './Search';

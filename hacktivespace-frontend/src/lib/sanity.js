@@ -6,4 +6,5 @@ export default createClient({
   dataset: 'production', // Your dataset name
   apiVersion: '2023-10-01',
   useCdn: true, // `false` if you want to ensure fresh data
+  // token: import.meta.env.VITE_SANITY_TOKEN, // Your read token from env
 });

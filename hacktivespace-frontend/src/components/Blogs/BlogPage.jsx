@@ -109,7 +109,7 @@ const BlogPage = () => {
                     </div>
                   </div>
                 </div>
-                <BlogComments />
+                <BlogComments  blogtitle={blog.title} />
                 <CommentForm />
               </div>
             </div>

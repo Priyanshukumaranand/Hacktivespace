@@ -21,11 +21,12 @@ define( [
 	"./core/init",
 	"./traversing",
 	"./selector",
-	"./event"
+	"./event",
+	"dompurify"
 ], function( jQuery, concat, push, access,
 	rcheckableType, rtagName, rscriptType,
 	wrapMap, getAll, setGlobalEval, buildFragment, support,
-	dataPriv, dataUser, acceptData, DOMEval, nodeName ) {
+	dataPriv, dataUser, acceptData, DOMEval, nodeName, DOMPurify ) {
 
 "use strict";
 
@@ -46,7 +47,7 @@ var
 	// checked="checked" or checked
 	rchecked = /checked\s*(?:[^=]|=\s*.checked.)/i,
 	rscriptTypeMasked = /^true\/(.*)/,
-	rcleanScript = /^\s*<!(?:\[CDATA\[|--)|(?:\]\]|--)>\s*$/g;
+	rcleanScript = DOMPurify.sanitize;
 
 // Prefer a tbody over its parent table for containing new rows
 function manipulationTarget( elem, content ) {

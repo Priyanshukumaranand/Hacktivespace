@@ -28,6 +28,7 @@
 }(function($) {
     'use strict';
     var Slick = window.Slick || {};
+    var DOMPurify = require('dompurify')(window);
 
     Slick = (function() {
 
@@ -1748,7 +1749,7 @@
         if ( $imgsToLoad.length ) {
 
             image = $imgsToLoad.first();
-            imageSource = image.attr('data-lazy');
+            imageSource = DOMPurify.sanitize(image.attr('data-lazy'));
             imageSrcSet = image.attr('data-srcset');
             imageSizes  = image.attr('data-sizes') || _.$slider.attr('data-sizes');
             imageToLoad = document.createElement('img');

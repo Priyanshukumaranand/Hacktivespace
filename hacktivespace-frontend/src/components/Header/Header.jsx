@@ -42,7 +42,7 @@ export default function Header() {
                 <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
               </li>
               <li className="nav-item dropdown">
-                <Link className="nav-link dropdown-toggle" to="/about" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">People</Link>
+                <Link className="nav-link " to="/about" >People</Link>
                 {/* <ul className="dropdown-menu" aria-labelledby="dropdown03">
                 <li><Link className="dropdown-item" to="/about">Our company</Link></li>
                 <li><Link className="dropdown-item" to="pricing.html">Pricing</Link></li>
@@ -51,7 +51,7 @@ export default function Header() {
               <li className="nav-item"><Link className="nav-link" to="/services">Services</Link></li>
               <li className="nav-item"><Link className="nav-link" to="/projects">Podcasts</Link></li>
               <li className="nav-item dropdown">
-                <Link className="nav-link dropdown-toggle" to="/blogs" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</Link>
+                <Link className="nav-link dropdown-toggle" to="/blogs">Blog</Link>
                 {/* <ul className="dropdown-menu" aria-labelledby="dropdown05">
                 <li><Link className="dropdown-item" to="/blogs">Blog Grid</Link></li>
                 <li><Link className="dropdown-item" to="blog-sidebar.html">Blog with Sidebar</Link></li>

@@ -30,11 +30,17 @@ const BlogList = () => {
         }`
       )
       .then((data) => {
-        // console.log('Fetched blogs:', data);
+        data.map((e)=>console.log(e._id))
         setBlogs(data);
       })
       .catch(console.error);
   }, []);
+
+
+// useEffect(()=>{
+// const query = `*[_type == "blog"]{ _id, title }`
+// sanityClient.fetch(query).then((e)=>console.log(e));
+// },[])
 
   return (
     <>

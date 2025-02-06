@@ -5,10 +5,9 @@ import sanityClient from '../../lib/sanity';
 import { Link } from 'react-router-dom';
 import LatestBlogs from './LatestBlogs';
 import Tags from './Tags';
-import BlogComments from './BlogComments';
 import Search from './Search';
 import BlogAuthor from './BlogAuthor';
-import CommentForm from './CommentForm';
+
 
 const BlogPage = () => {
   const { slug } = useParams();
@@ -20,6 +19,7 @@ const BlogPage = () => {
         `*[slug.current == $slug]{
           title,
           slug,
+          _id,
           author->{
             name,
             image{
@@ -44,9 +44,19 @@ const BlogPage = () => {
         }`,
         { slug }
       )
-      .then((data) => setBlog(data[0]))
+      .then((data) => {
+       
+        setBlog(data[0])
+      
+      })
       .catch(console.error);
   }, [slug]);
+
+// useEffect(()=>{
+// const query = `*[_type == "blog"]{ _id, title }`
+// sanityClient.fetch(query).then((e)=>console.log(e));
+// },[])
+
 
   if (!blog) return <div>Loading...</div>;
 
@@ -109,8 +119,8 @@ const BlogPage = () => {
                     </div>
                   </div>
                 </div>
-                <BlogComments  blogtitle={blog.title} />
-                <CommentForm />
+                
+               
               </div>
             </div>
             <div className="col-lg-4">

@@ -13,6 +13,7 @@ import PeopleItem from './PeopleItem';
 
 export default function About() {
 
+
     const [authors, setAuthors] = useState([]);
 
     useEffect(() => {
@@ -159,7 +160,7 @@ export default function About() {
 
                         <div className="row justify-content-center">
                             {authors.map((author) => (
-                                <PeopleItem key={author._id} author={author} />
+                                <PeopleItem key={Math.random()} author={author} />
                             ))}
                         </div>
                     </div>

@@ -19,7 +19,7 @@
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1",
     "tw-elements-react": "^1.0.0-alpha-end",
-    "dompurify": "^3.2.3"
+    "dompurify": "^3.4.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
